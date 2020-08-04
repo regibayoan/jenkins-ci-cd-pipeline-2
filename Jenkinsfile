@@ -4,7 +4,7 @@ registry = "regibayoandocker98/build"
 registryCredential = 'dockerhub_id'
 dockerImage = ''
 }
-agent slave1
+agent { label 'slave1' }
 stages {
 stage('Cloning our Git') {
 steps {
